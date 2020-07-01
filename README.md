@@ -1,2 +1,2 @@
-# prime
-tiberias-prime
+# mashat
+mashat-law

@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-/*const { Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 
 
 const database = 'mashat_db';
@@ -13,7 +13,7 @@ const password = 'mteburhx';
 const sequelize = new Sequelize(database, username, password, {
   host: 'localhost',
   dialect: 'postgres'
-});*/
+});
 //testing: the run function is for: 'You can only use await inside an async function, not at the top level. There's a proposal to support top-level await, but that is not currently supported in JS'
 async function run() {
   try {
@@ -24,7 +24,7 @@ async function run() {
   }
 }
 //for testing the connection:
-//run().catch(error => console.log(error.stack));
+run().catch(error => console.log(error.stack));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

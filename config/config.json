@@ -16,11 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "mashat",
+    "password": "mteburhx",
+    "database": "mashat_db",
     "host": "127.0.0.1",
-    "dialect": "mysql",
+    "dialect": "postgres",
     "operatorsAliases": false
   }
 }

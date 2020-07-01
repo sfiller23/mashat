@@ -6,7 +6,9 @@ var logger = require('morgan');
 const { Sequelize } = require('sequelize');
 
 
-const database = 'mashat_db';
+const dotenv = require('dotenv');//reads the .env file
+dotenv.config();
+/*const database = 'mashat_db';
 const username = 'postgres';
 const password = 'mteburhx';
 
@@ -22,9 +24,9 @@ async function run() {
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }
-}
+}*/
 //for testing the connection:
-run().catch(error => console.log(error.stack));
+//run().catch(error => console.log(error.stack));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

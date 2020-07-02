@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');//reads the .env file
+dotenv.config();
+
 module.exports = {
   "development": {
     "username": "postgres",

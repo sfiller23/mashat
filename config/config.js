@@ -19,9 +19,9 @@ module.exports = {
     "operatorsAliases": false
   },
   "production": {
-    "username": "mashat",
-    "password": "mteburhx",
-    "database": "mashat_db",
+    username: process.env.PROD_DB_USERNAME,
+    password: process.env.PROD_DB_PASSWORD,
+    database: process.env.PROD_DB_NAME,
     "host": "127.0.0.1",
     "dialect": "postgres",
     "operatorsAliases": false
